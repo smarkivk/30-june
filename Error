@@ -1,0 +1,4 @@
+node .js 
+Error: error:0308010C:digital envelope routines::unsupported at new Hash (node:internal/crypto/hash:71:19)
+
+after which node version has been changed from 18 to 20 
