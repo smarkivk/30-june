@@ -1,0 +1,34 @@
+package advanced;
+
+public class GenericsExample<T> {
+    private T data;
+
+    public GenericsExample(T data) {
+        this.data = data;
+    }
+
+    public T getData() { // why diff method for returning this
+        return data;
+    }
+
+    public void printData() {
+        System.out.println("Data: " + data);
+    }
+
+    public static void main(String[] args) {
+        // Creating an instance of GenericsExample with Integer type
+        GenericsExample<Integer> intExample = new GenericsExample<>(10);
+        intExample.printData();
+
+        // Creating an instance of GenericsExample with String type
+        GenericsExample<String> stringExample = new GenericsExample<>("Hello, Generics!");
+        stringExample.printData();
+
+        //GenericsExample<String> DoubleExample = new GenericsExample<>(2);
+        //DoubleExample.printData();
+
+
+
+
+    }
+}
